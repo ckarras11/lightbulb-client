@@ -1,9 +1,13 @@
 import React from 'react';
+import Logo from './logo';
+import { Link } from 'react-router-dom';
+import './landing.css';
 
 const Landing = () => {
     return (
-        <div>
-            <h2>Landing</h2>
+        <div className='landing'>
+            <Logo />
+            <h3>Idea Hub</h3>
         </div>
     );
 };
