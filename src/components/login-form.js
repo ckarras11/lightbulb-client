@@ -6,6 +6,7 @@ let LoginForm = (props) => {
     const { handleSubmit} = props
     return (
         <form className={'form-horizontal'} onSubmit={handleSubmit}>
+            <legend>Log In</legend>
             <div className={'form-group'}>
                 <label className={'control-label'} htmlFor='email'>Email:</label>
                 <Field className={'form-control'} name='email' component='input' type='email' />

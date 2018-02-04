@@ -6,6 +6,7 @@ let RegisterForm = (props) => {
     const { handleSubmit} = props
     return (
         <form className={'form-horizontal'} onSubmit={handleSubmit}>
+            <legend>Register</legend>
             <div className={'form-group'}>
                 <label className={'control-label'} htmlFor='firstName'>First Name:</label>
                 <Field className={'form-control'} name='firstName' component='input' type='text' />
