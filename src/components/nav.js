@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './nav.css'
 
 const Nav = () => {
     return (
         <div>
             <nav>
-                <Link to='/login'>Login</Link>
-                <Link to='/register'>Register</Link>
-                <Link to='/home'>Home</Link>
-                <Link to='/browse'>Browse</Link>
+                <NavLink activeClassName="active" to='/login'>Login</NavLink>
+                <NavLink activeClassName="active" to='/register'>Register</NavLink>
+                <NavLink activeClassName="active" to='/home'>Home</NavLink>
+                <NavLink activeClassName="active" to='/browse'>Browse</NavLink>
             </nav>
         </div>
     );
