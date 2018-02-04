@@ -1,20 +1,20 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
-
+import './login-form.css';
 
 let LoginForm = (props) => {
     const { handleSubmit} = props
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor='email'>Email</label>
-                <Field name='email' component='input' type='email' />
+        <form className={'form-horizontal'} onSubmit={handleSubmit}>
+            <div className={'form-group'}>
+                <label className={'control-label'} htmlFor='email'>Email:</label>
+                <Field className={'form-control'} name='email' component='input' type='email' />
             </div>
-            <div>
-                <label htmlFor='password'>Password</label>
-                <Field name='password' component='input' type='password' />
+            <div className={'form-group'}>
+                <label className={'control-label'} htmlFor='password'>Password:</label>
+                <Field className={'form-control'} name='password' component='input' type='password' />
             </div>
-            <button type='submit'>Submit</button>
+            <button className={'btn btn-success'} type='submit'>Submit</button>
 
         </form>
     );
